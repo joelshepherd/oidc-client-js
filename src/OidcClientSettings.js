@@ -8,7 +8,7 @@ import { MetadataService } from './MetadataService.js';
 
 const OidcMetadataUrlPath = '.well-known/openid-configuration';
 
-const DefaultResponseType = "id_token";
+const DefaultResponseType = "token";
 const DefaultScope = "openid";
 const DefaultStaleStateAge = 60 * 15; // seconds
 const DefaultClockSkewInSeconds = 60 * 5;

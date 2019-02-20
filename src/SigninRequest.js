@@ -81,7 +81,7 @@ export class SigninRequest {
 
     static isOidc(response_type) {
         var result = response_type.split(/\s+/g).filter(function(item) {
-            return item === "id_token";
+            return item === "id_token" || item === "token";
         });
         return !!(result[0]);
     }
